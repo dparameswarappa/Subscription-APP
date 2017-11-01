@@ -1,0 +1,31 @@
+
+  <div id="welcome" class="span7">
+    <h1>Membership Site</h1>
+  </div>
+  <div class="row col-sm-12 plans">
+    <div class="col-sm-2 well">
+      <div class="plan"><h2>Basic</h2></div>
+      <ul class="list-unstyled">
+        <li>Private Party Access Alternate Fridays at Popular bars with 1 Guest</li>
+      </ul>
+      <h3>$19/month</h3>
+      <%= link_to "Subscribe", controller: "subscriptions", action: "new", plan: 'basic', :class => 'btn btn-primary' %>
+    </div>
+    <div class="col-sm-2 well featured">
+      <div class="plan featured-plan"><h2>Classic</h2></div>
+      <ul class="list-unstyled">
+        <li>Preferential access to SF restaurants</li>
+      </ul>
+      <h3>$99/month</h3>
+      <%= link_to "Subscribe", controller: "subscriptions", action: "new", plan: 'classic', :class => 'btn btn-primary' %>
+    </div>
+    <div class="col-sm-2 well">
+      <div class="plan"><h2>Modern</h2></div>
+      <ul class="list-unstyled">
+        <li>Private Lounge Access SFO</li>
+        <li>Vip Access to Events and Concerts including chauffeur</li>
+      </ul>
+      <h3>$199/month</h3>
+      <%= link_to "Subscribe", controller: "subscriptions", action: "new", plan: 'modern', :class => 'btn btn-primary' %>
+    </div>
+  </div>
